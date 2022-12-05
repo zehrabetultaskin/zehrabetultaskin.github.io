@@ -1,0 +1,487 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Admin Paneli | İstatistikler</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- meanmenu icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/meanmenu.min.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- educate icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/educate-custon-icon.css">
+    <!-- morrisjs CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/morrisjs/morris.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- metisMenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
+    <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
+    <!-- calendar CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+    <!-- Start Left menu area -->
+    <div class="left-sidebar-pro">
+        <nav id="sidebar" class="" style="background-color:#252531;">
+            <div class="sidebar-header" style="background-color:#252531;">
+                <br>
+                <a href="index.html" class="main-logo">
+                    <h1 class="m-0 display-5 text-white"><span class="text-primary" style="color: #DFB163 !important; ">Organiz</span><span style="  color:#fff !important;">ET</span></h1>
+            </div>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar" style="background-color:#252531;" >
+                <nav class="sidebar-nav left-sidebar-menu-pro" style="background-color:#252531;">
+                    <ul class="metismenu" id="menu1" style="background-color:#252531;">
+                        <li class="active">
+                            <a class="" href="index.html"><span class="educate-icon educate-home icon-wrap"></span>
+                                   <span class="mini-click-non">Anasayfa</span>
+                                </a>
+                        </li>
+                        <li>
+                            <a title="Landing Page" href="events.html" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Takvim</span></a>
+                        </li>
+                        <li>
+                            <a class="" href="about.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Kurumsal</span></a>
+                        </li>
+                        <li>
+                            <a class="" href="blog.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Blog İçerikleri</span></a>
+                        </li>
+                        <li>
+                            <a class="" href="services.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Servisler</span></a>
+                        </li>
+                        <li>
+                            <a class="" href="projects.html" aria-expanded="false"><span class="educate-icon educate-department icon-wrap"></span> <span class="mini-click-non">Projeler</span></a>
+                        </li>
+                        <li>
+                            <a class="" href="statistics.html" aria-expanded="false"><span class="educate-icon educate-charts icon-wrap"></span> <span class="mini-click-non">İstatistikler</span></a>
+                        </li>
+                        <li id="removable">
+                            <a class="" href="../index.html" aria-expanded="false"><span class="educate-icon educate-pages icon-wrap"></span> <span class="mini-click-non">Çıkış</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <!-- End Left menu area -->
+    <!-- Start Welcome area -->
+    <div class="all-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-pro">
+                        <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-advance-area" >
+            <div class="header-top-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"style="background-color: #DFB163;">
+                            <div class="header-top-wraper"style="background-color: #DFB163;">
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                        <div class="menu-switcher-pro">
+                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn" style="background-color:#252531;">
+													<i class="educate-icon educate-nav"></i>
+												</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                                    </div>
+                                    <!-- Admin Panel Start -->
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                        <div class="header-right-info">
+                                            <ul class="nav navbar-nav mai-top-nav header-right-menu">
+                                                
+                                                <li class="nav-item">
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+															<img src="img/product/pro4.jpg" alt="" />
+															<span class="admin-name">Admin</span>
+															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
+														</a>
+                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                                                        <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>Hesabım</a>
+                                                        </li>
+                                                        <li><a href="#"><span class="edu-icon edu-user-rounded author-log-ic"></span>Profilim</a>
+                                                        </li>
+                                                        <li><a href="#"><span class="edu-icon edu-settings author-log-ic"></span>Ayarlar</a>
+                                                        </li>
+                                                        <li><a href="../index.html"><span class="edu-icon edu-locked author-log-ic"></span>Çıkış Yap</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                
+                                                <li class="nav-item nav-setting-open"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="educate-icon educate-menu"></i></a>
+
+                                                    <div role="menu" class="admintab-wrap menu-setting-wrap menu-setting-wrap-bg dropdown-menu animated zoomIn">
+                                                        <ul class="nav nav-tabs custon-set-tab">
+                                                            <li class="active"><a data-toggle="tab" href="#Notes">Notes</a>
+                                                            </li>
+                                                            <li><a data-toggle="tab" href="#Projects">Projects</a>
+                                                            </li>
+                                                            <li><a data-toggle="tab" href="#Settings">Settings</a>
+                                                            </li>
+                                                        </ul>
+
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Admin Panel End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul class="metismenu" id="menu1" style="background-color:#252531;">
+                                        <li class="active">
+                                            <a class="" href="index.html"><span class="educate-icon educate-home icon-wrap"></span>
+                                                   <span class="mini-click-non">Anasayfa</span>
+                                                </a>
+                                        </li>
+                                        <li>
+                                            <a title="Landing Page" href="events.html" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Takvim</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="about.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Kurumsal</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="blog.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Blog İçerikleri</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="services.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Servisler</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="projects.html" aria-expanded="false"><span class="educate-icon educate-department icon-wrap"></span> <span class="mini-click-non">Projeler</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="statistics.html" aria-expanded="false"><span class="educate-icon educate-charts icon-wrap"></span> <span class="mini-click-non">İstatistikler</span></a>
+                                        </li>
+                                        <li id="removable">
+                                            <a class="" href="../index.html" aria-expanded="false"><span class="educate-icon educate-pages icon-wrap"></span> <span class="mini-click-non">Çıkış</span></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu end -->
+            <div class="breadcome-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="breadcome-list">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Pie Chart Star --> 
+
+<!-- --------------- -->
+<div class="container-fluid bg-light" style="margin-left:200px;">
+    <div class="container">
+        <div class="row location">
+            <canvas id="my1Chart" style="width:100%;max-width:800px"></canvas>
+
+            <script>
+            var xValues = ["İşletme", "Yönetim Bilişim Sistemleri", "İktisat", "İdari Ve İktisadi Bilimler", "Bilişim Sistemleri Mühendisliği"];
+            var yValues = [65, 49, 44, 24, 5];
+            var barColors = [
+            "#DFB163",
+            "#252531",
+            "#181818",
+            "#f6e9d3",
+            "#777777"
+            ];
+            
+            new Chart("my1Chart", {
+            type: "pie",
+            data: {
+                labels: xValues,
+                datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+                }]
+            },
+            options: {
+                title: {
+                display: true,
+                text: "Alanlarına Göre Çalışan Sayısı"
+                }
+            }
+            });
+            </script> 
+            <br>
+            <div class="professor-stds" style="margin-left:355px; color:#252531 ;">
+                <button data-toggle="tooltip" title="Güncelle" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+            <button data-toggle="tooltip" title="Sil" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+<div class="container-fluid py-5" style="margin-left:200px;">
+    <div class="container py-5">
+        <div class="row location">
+            <canvas id="my2Chart" style="width:100%;max-width:800px"></canvas>
+
+                <script>
+                var xValues = ["Otomotiv", "Tekstil", "Reklam Ajansı", "Gıda", "Teknoloji"];
+                var yValues = [38, 49, 44, 30, 3];
+                var barColors = [
+                "#DFB163",
+                "#252531",
+                "#181818",
+                "#f6e9d3",
+                "#777777"
+                ];
+                
+                new Chart("my2Chart", {
+                  type: "pie",
+                  data: {
+                    labels: xValues,
+                    datasets: [{
+                      backgroundColor: barColors,
+                      data: yValues
+                    }]
+                  },
+                  options: {
+                    title: {
+                      display: true,
+                      text: "Çalıştığımız Müşterilerimizin Sektörleri "
+                    }
+                  }
+                });
+            </script>
+<br>
+            <div class="professor-stds" style="margin-left:355px; color:#252531 ;">
+                <button data-toggle="tooltip" title="Güncelle" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+            <button data-toggle="tooltip" title="Sil" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-light" style="margin-left:200px;">
+    <div class="container">
+        <div class="row location">
+            <canvas id="my3Chart" style="width:100%;max-width:800px"></canvas>
+
+            <script>
+            var xValues = ["Erkek", "Kadın"];
+            var yValues = [90, 92];
+            var barColors = [
+            "#DFB163",
+            "#252531",
+            "#181818",
+            "#f6e9d3",
+            "#777777"
+            ];
+            
+            new Chart("my3Chart", {
+            type: "pie",
+            data: {
+                labels: xValues,
+                datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+                }]
+            },
+            options: {
+                title: {
+                display: true,
+                text: "Çalışanlarımızın Cinsiyet Dağılımı"
+                }
+            }
+            });
+            </script>
+            <br>
+            <div class="professor-stds" style="margin-left:355px; color:#252531 ;">
+                <button data-toggle="tooltip" title="Güncelle" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+            <button data-toggle="tooltip" title="Sil" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+    <div class="container-fluid py-5" style="margin-left:200px;">
+        <div class="container py-5">
+            <div class="row location">
+            <canvas id="my4Chart" style="width:100%;max-width:800px"></canvas>
+
+                <script>
+                var xValues = ["60-50", "50-40", "40-30", "30-20", "20-18"];
+                var yValues = [5, 17, 69, 85, 6];
+                var barColors = [
+                "#DFB163",
+                "#252531",
+                "#181818",
+                "#f6e9d3",
+                "#777777"
+                ];
+                
+                new Chart("my4Chart", {
+                  type: "pie",
+                  data: {
+                    labels: xValues,
+                    datasets: [{
+                      backgroundColor: barColors,
+                      data: yValues
+                    }]
+                  },
+                  options: {
+                    title: {
+                      display: true,
+                      text: "Çalışanlarımızın Yaş Dağılımı"
+                    }
+                  }
+                });
+            </script>
+            <br>
+            <div class="professor-stds" style="margin-left:355px; color:#252531 ;">
+                <button data-toggle="tooltip" title="Güncelle" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+            <button data-toggle="tooltip" title="Sil" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            </div>
+            <br><br>
+        </div>
+    </div>
+</div>
+
+    <!-- Pie Chart End -->
+                <!-- Footer Start -->
+                <div class="footer-copyright-area"style="background-color: #DFB163;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="footer-copy-right">
+                                    <p><a href="../index.html">OrganizET</a> © 2022. Tüm Hakları Saklıdır.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer End -->
+    </div>
+
+    <!-- jquery
+		============================================ -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="js/wow.min.js"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="js/jquery-price-slider.js"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="js/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- sticky JS
+		============================================ -->
+    <script src="js/jquery.sticky.js"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS
+		============================================ -->
+    <script src="js/metisMenu/metisMenu.min.js"></script>
+    <script src="js/metisMenu/metisMenu-active.js"></script>
+    <!-- Charts JS
+		============================================ -->
+    <script src="js/charts/Chart.js"></script>
+    <script src="js/charts/bar-chart.js"></script>
+    <!-- tab JS
+		============================================ -->
+    <script src="js/tab.js"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="js/plugins.js"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="js/main.js"></script>
+    <!-- tawk chat JS
+		============================================ -->
+    <script src="js/tawk-chat.js"></script>
+</body>
+
+</html>
